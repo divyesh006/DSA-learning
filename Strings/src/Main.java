@@ -21,6 +21,16 @@ public class Main {
         //this will print character first it will convert a into ascii value and that after that ascii value
         //convert into corresponding character basically that mean typecasting
         System.out.println((char)('a' + 3));
-
+        String series = "";
+        //string not allowed us to modify the string value, so it will create a object after each loop and copy
+        //from the previous loop and add character to the string
+        //so basically after one loop it will create a new object for new string
+        for (int i = 0; i < 26; i++){
+            char ch = (char)('a' + i);
+            series = series + ch;
+        }
+        System.out.println(series);
+        //one is string and another one is character so it will add both
+        System.out.println("a" + 'b');
     }
 }
