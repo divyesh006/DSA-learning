@@ -1,8 +1,9 @@
 public class NumberRecursion {
     static void print(int n){
+        //base condition
         if (n == 100){
             System.out.println(n);
-            return;
+            return ;
         }
         System.out.println(n);
         print(n + 1);
